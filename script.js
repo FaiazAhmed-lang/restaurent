@@ -95,7 +95,11 @@ var tl2 = gsap.timeline({
       }
 });
 
-tl2.to( "*", {
+tl2.to( ".main", {
+  backgroundColor: "black", // Add quotes around 'black'
+  duration: 1, // Add a duration for the animation
+});
+tl2.to( ".txt", {
   backgroundColor: "black", // Add quotes around 'black'
   duration: 1, // Add a duration for the animation
 });
@@ -130,11 +134,47 @@ var tl4 = gsap.timeline({
       
       }
 });
-tl4.to("*",{
+tl4.to(".main",{
   backgroundColor:"white",
   duration:1,
 })
 tl4.to(".text p",{
   color:"black",
   duration:1,
+});
+var call = document.querySelector(".order-call")
+var order = document.querySelector("#one button");
+var order1 = document.querySelector("#two button");
+var order2 = document.querySelector("#three button");
+
+var cross = document.querySelector("#fir i");
+
+
+// Function to disable scrolling
+var body = document.querySelector("body")
+const disableScroll = () => {
+  body.style.overflow = 'hidden';
+};
+
+// Function to enable scrolling
+const enableScroll = () => {
+  body.style.overflow = '';
+};
+order.addEventListener("click",function(){
+    call.style.display="flex";
+    disableScroll();
+});
+order1.addEventListener("click",function(){
+  call.style.display="flex";
+  disableScroll();
+});
+order2.addEventListener("click",function(){
+  call.style.display="flex";
+  disableScroll();
 })
+cross.addEventListener("click",function(){
+  call.style.display="none"
+   enableScroll();
+})
+
+

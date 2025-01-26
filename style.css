@@ -4,7 +4,6 @@
     font-family: PP Mori;
     box-sizing:border-box;
     color:black;
-    background: white;
     font-family: monospace;
 }
 html,body{
@@ -100,7 +99,6 @@ html,body{
 
     background-position: center;
     background-size: cover;
-
 }
 .page video{
     width: 60%;
@@ -111,7 +109,7 @@ html,body{
 }
 .page img{
     position: fixed;
-     
+     top:333px;
 }
 .page1{
     width: 100%;
@@ -184,7 +182,7 @@ html,body{
 
   .page2{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 .m-txt {
     width: 100%;
@@ -221,3 +219,128 @@ html,body{
     transform: rotate(200deg);
   
   }
+
+  .menu-food{
+    width: 100%;
+    height: 100vh;
+  }
+  .sec-food1{
+    width: 100%;
+    height: 50vh;
+    margin-top: 100px;
+    display: flex;
+  }
+  .sec-food1 .desc{
+    width: 300px;
+    height: 100%;
+  }
+  .sec-food1 .desc h1{
+    font-size: 45px;
+    word-spacing: -2px;
+    color: transparent;
+    -webkit-text-stroke: 2px #D32F2F;
+  }
+  .sec-food1 .desc p{
+    font-size: 14px;
+  }
+.sec-food1 img{
+    height: 100%;
+    width: 300px;
+    margin-right: 78px;
+}
+.desc-price{
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+}
+.s-line{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.price .s-line p{
+    font-size: 30px;
+    color:#d32f2f31;
+    text-decoration:line-through;
+}
+.price .s-line  h1{
+    font-size: 70px;
+    color: #D32F2F;
+}
+.price{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.price button{
+    width: 170px;
+    height: 50px;
+    border: 2px solid #D32F2F;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: 0.2s linear;
+
+}
+.price button:hover{
+    background:#D32F2F;
+}
+.order-call{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background:#D32F2F;
+    justify-content: space-evenly;
+
+    border-radius: 20px;
+    display: none;
+}
+.order-call h1{
+    color: transparent;
+}
+.order-call #fir{
+    font-size: 50px;
+    -webkit-text-stroke: white 1px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.order-call #fir i{
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: white;
+    transition: 0.2s linear;
+}
+.order-call #fir i:hover{
+    border:1px solid white;
+    color: black;
+}
+.order-call #sec{
+    color: white;
+    text-align: center;
+}
+.order-call #third{
+    color:white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    transition: 0.2s linear;
+}
+.order-call #third:hover{
+    color: rgba(0, 0, 0, 0.61);
+    text-decoration:underline;
+}
+  .page3{
+    height: 100vh;
+    width: 100%;
+}
