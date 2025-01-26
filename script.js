@@ -118,3 +118,23 @@ tl3.from(".page1 .taste",{
   duration: 1,
   top:20
 })
+var tl4 = gsap.timeline({
+  scrollTrigger:{
+      trigger: ".page2",
+      scroller:".main",
+      start:"top 85%",
+      markers:true,
+      end:"top 60%",
+  scrub:2,
+
+      
+      }
+});
+tl4.to("*",{
+  backgroundColor:"white",
+  duration:1,
+})
+tl4.to(".text p",{
+  color:"black",
+  duration:1,
+})

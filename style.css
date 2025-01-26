@@ -4,7 +4,7 @@
     font-family: PP Mori;
     box-sizing:border-box;
     color:black;
-    background: #E6D6A2;
+    background: white;
     font-family: monospace;
 }
 html,body{
@@ -16,17 +16,15 @@ html,body{
     padding: 0px 30px;
 }
 .nav{
-    background: #E6D6A2;
     width: 100%;
-    height: 99px;
+    height: 117px;
     display: flex;
-    /* justify-content: space-between; */
     gap: 535px;
     align-items: center;
 }
 .nav img{
-    width: 205px;
-    height: 99px;
+    width: 260px;
+    height: 120px;
     position: relative;
 }
 .nav .menu{
@@ -43,8 +41,8 @@ html,body{
     text-decoration: none;
     font-size: 23px;
     font-weight: 300;
-position: relative;
- 
+    position: relative;
+    color: #D32F2F;
 }
 
 
@@ -56,7 +54,7 @@ position: relative;
 
 .menu-item {
     height: 30px;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
   }
   
   .menu-item h3 {
@@ -77,7 +75,7 @@ position: relative;
     font-size: 10vw;
     font-weight: 300;
     margin-left: 6vw;
-    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    -webkit-text-stroke: 5px #D32F2F;
     color: transparent;
     z-index: 21;
     position: relative;
@@ -86,7 +84,7 @@ position: relative;
     font-size: 10vw;               
     font-weight: 300;              
     margin-left: 26vw;             
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 2px #D32F2F;
     color: transparent;
     border-radius: 20px;
 }
@@ -96,10 +94,10 @@ position: relative;
     border-radius: 50%;
     background: white;
     position:fixed;
-   mix-blend-mode:difference;
-   z-index: 44;
+    mix-blend-mode:difference;
+    z-index: 44;
     transition: left linear 0.1s top linear; 
-    /* transition: all linear 0.3s; */
+
     background-position: center;
     background-size: cover;
 
@@ -119,8 +117,6 @@ position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
-    /* flex-direction: column;
-    align-items: center; */
     justify-content: center;
     margin-top: 5vw;
 
@@ -130,6 +126,14 @@ position: relative;
     font-size: 10vw;
     -webkit-text-stroke: 2px white;
     color: transparent;
+   letter-spacing: -4px;
+   color: #D32F2F;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
 .page1 .text{
     width: 400px;
@@ -141,6 +145,8 @@ position: relative;
 .page1 .text h1{
     color: white;
     font-size: 70px;
+    color:#D32F2F;
+
     line-height: 70px;
 
 }
@@ -149,3 +155,69 @@ position: relative;
     font-size: 20px;
     font-weight: lighter;
 }
+.bottomway{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page1-img {
+    position: relative;
+}
+
+
+.img1 {
+    width: 100%;
+    width: 60vh;
+    height: 70vh; 
+    border-radius: 20px;
+
+  }
+  
+  .img2 {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 60vh;
+    height: 70vh;
+    border-radius: 20px;
+  } 
+
+  .page2{
+    width: 100%;
+    height: 100vh;
+}
+.m-txt {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.m-txt h1{
+    color: #D32F2F;
+    font-size: 13vw;text-decoration: dotted;
+    position: relative;
+}
+.m-txt h1::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #D32F2F;
+    transition: width 0.3s ease-in-out;
+}
+.m-txt h1:hover::after {
+    width: 100%;
+  }
+  .m-txt img{
+    width: 320px;
+    height: 300px;
+    transform: rotate(20deg);
+    transition: transform 0.5s ease-in-out;
+  }
+  .m-txt img:hover{
+    transform: rotate(200deg);
+  
+  }
