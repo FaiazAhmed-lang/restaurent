@@ -146,7 +146,6 @@ var call = document.querySelector(".order-call")
 var order = document.querySelector("#one button");
 var order1 = document.querySelector("#two button");
 var order2 = document.querySelector("#three button");
-
 var cross = document.querySelector("#fir i");
 
 
