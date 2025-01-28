@@ -30,6 +30,7 @@ function ab(){
 ab();
 
 
+
 let cur = document.querySelector(".cursor");
 
 document.addEventListener("mousemove",function(dets){
@@ -87,20 +88,19 @@ tl.to(video,{
 
 var tl2 = gsap.timeline({
   scrollTrigger:{
-      trigger: video,
+      trigger: ".page1",
       scroller:".main",
       start:"top 85%",
+      markers:true,
       end:"top 60%",
       scrub:2,
       }
 });
-
+tl2.to(".slide-bar h3",{
+  color:"white"
+})
 tl2.to( ".main", {
-  backgroundColor: "black", // Add quotes around 'black'
-  duration: 1, // Add a duration for the animation
-});
-tl2.to( ".txt", {
-  backgroundColor: "black", // Add quotes around 'black'
+  backgroundColor: "black", 
   duration: 1, // Add a duration for the animation
 });
 tl2.to(cur,{
@@ -176,4 +176,25 @@ cross.addEventListener("click",function(){
    enableScroll();
 })
 
-
+var menu = document.querySelector(".main i");
+var cancle =document.querySelector(".can i");
+menu.addEventListener("click",function(){
+  gsap.from(".con h3", {
+    stagger:1, 
+    opacity: 0, 
+    x: 100,      
+    duration: 0.3,
+  })
+  
+  gsap.to(".slide-bar",{
+      right:0,
+      duration:1,
+  })
+})
+cancle.addEventListener("click",function(){
+  gsap.to(".slide-bar",{
+    right:-500,
+    duration:1,
+})
+  
+})
