@@ -81,7 +81,7 @@ tl.from(".page h2",{
 var video = document.querySelector(".page video");
 
 tl.to(video,{
-    width:"90%",
+    width:"115%",
     duration:3
 },"mama")
 
@@ -91,7 +91,6 @@ var tl2 = gsap.timeline({
       trigger: ".page1",
       scroller:".main",
       start:"top 85%",
-      markers:true,
       end:"top 60%",
       scrub:2,
       }
@@ -127,7 +126,6 @@ var tl4 = gsap.timeline({
       trigger: ".page2",
       scroller:".main",
       start:"top 85%",
-      markers:true,
       end:"top 60%",
   scrub:2,
 
@@ -193,7 +191,7 @@ menu.addEventListener("click",function(){
 })
 cancle.addEventListener("click",function(){
   gsap.to(".slide-bar",{
-    right:-500,
+    right:-300,
     duration:1,
 })
   

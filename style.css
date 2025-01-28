@@ -101,7 +101,7 @@ html,body{
     background-size: cover;
 }
 .page video{
-    width: 60%;
+    width: 80%;
     margin-top: 7vw;
     position: relative;
     left: 50%;
@@ -362,11 +362,11 @@ html,body{
     font-size: 60px;
 }
 .slide-bar {
-    width: 500px; 
+    width: 250px; 
     height: 100vh; 
     /* background:rgba(255, 255, 255, 0.5);  */
     position: fixed; 
-    right: -500px; 
+    right: -300px; 
     top: 0;
     z-index: 99; 
     backdrop-filter: blur(10px); 
@@ -449,6 +449,7 @@ html,body{
     }
     .slide-bar{
         display: flex;
+        width: 300px;
     }
     .main i{
         display: inline;
@@ -481,17 +482,29 @@ html,body{
     .page1 .text {
         height: 437px;
     }
+    .page1 .text h1{
+        text-align: center;
+    }
+    .page1 .text p{
+        text-align: center;
+    }
     .m-txt h1{
-        font-size: 10vw;
+        font-size: 12vw;
     }
     .m-txt img{
-        width: 220px;
-        height: 200px;
+        width: 120px;
+        height: 100px;
+    }
+    .sec-food1 .desc p{
+        text-align: center;
     }
     .sec-food1{
         flex-direction: column;
         align-items: center;
         gap: 50px;
+    }
+    .page1{
+        margin-top: -26vw;
     }
     .menu-food{
         display: flex;
